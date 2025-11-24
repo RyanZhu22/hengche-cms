@@ -1,0 +1,135 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_backgrounds",
+  "info": {
+    "singularName": "company-background",
+    "pluralName": "company-backgrounds",
+    "displayName": "CompanyBackground"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title1": {
+      "type": "string"
+    },
+    "title2": {
+      "type": "string"
+    },
+    "title3": {
+      "type": "string"
+    },
+    "title4": {
+      "type": "string"
+    },
+    "title5": {
+      "type": "string"
+    },
+    "title6": {
+      "type": "string"
+    },
+    "title7": {
+      "type": "string"
+    },
+    "title8": {
+      "type": "string"
+    },
+    "title9": {
+      "type": "string"
+    },
+    "title10": {
+      "type": "string"
+    },
+    "title11": {
+      "type": "string"
+    },
+    "title12": {
+      "type": "string"
+    },
+    "title13": {
+      "type": "string"
+    },
+    "title14": {
+      "type": "string"
+    },
+    "title15": {
+      "type": "string"
+    },
+    "title16": {
+      "type": "string"
+    },
+    "txt1": {
+      "type": "text"
+    },
+    "txt2": {
+      "type": "text"
+    },
+    "txt3": {
+      "type": "text"
+    },
+    "txt4": {
+      "type": "text"
+    },
+    "txt5": {
+      "type": "text"
+    },
+    "txt6": {
+      "type": "text"
+    },
+    "txt7": {
+      "type": "text"
+    },
+    "txt8": {
+      "type": "text"
+    },
+    "txt9": {
+      "type": "text"
+    },
+    "txt10": {
+      "type": "text"
+    },
+    "txt11": {
+      "type": "text"
+    },
+    "txt12": {
+      "type": "text"
+    },
+    "txt13": {
+      "type": "text"
+    },
+    "txt14": {
+      "type": "text"
+    },
+    "txt15": {
+      "type": "text"
+    },
+    "txt16": {
+      "type": "text"
+    },
+    "txt17": {
+      "type": "text"
+    },
+    "txt18": {
+      "type": "text"
+    },
+    "txt19": {
+      "type": "text"
+    },
+    "txt20": {
+      "type": "text"
+    },
+    "txt21": {
+      "type": "text"
+    },
+    "txt22": {
+      "type": "text"
+    },
+    "txt23": {
+      "type": "text"
+    },
+    "txt24": {
+      "type": "text"
+    }
+  }
+}
