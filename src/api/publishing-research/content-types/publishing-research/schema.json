@@ -1,0 +1,181 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publishing_researches",
+  "info": {
+    "singularName": "publishing-research",
+    "pluralName": "publishing-researches",
+    "displayName": "PublishingResearch"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link1": {
+      "type": "string"
+    },
+    "link2": {
+      "type": "string"
+    },
+    "link3": {
+      "type": "string"
+    },
+    "link4": {
+      "type": "string"
+    },
+    "link5": {
+      "type": "string"
+    },
+    "link6": {
+      "type": "string"
+    },
+    "link7": {
+      "type": "string"
+    },
+    "link8": {
+      "type": "string"
+    },
+    "link9": {
+      "type": "string"
+    },
+    "link10": {
+      "type": "string"
+    },
+    "img1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img4": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img5": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img6": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img7": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img8": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img9": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img10": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link11": {
+      "type": "string"
+    },
+    "txt1": {
+      "type": "string"
+    },
+    "txt2": {
+      "type": "string"
+    },
+    "txt3": {
+      "type": "string"
+    },
+    "txt4": {
+      "type": "string"
+    },
+    "txt5": {
+      "type": "string"
+    },
+    "txt6": {
+      "type": "string"
+    },
+    "txt7": {
+      "type": "string"
+    },
+    "txt8": {
+      "type": "string"
+    },
+    "txt9": {
+      "type": "string"
+    },
+    "txt10": {
+      "type": "string"
+    },
+    "txt11": {
+      "type": "string"
+    }
+  }
+}

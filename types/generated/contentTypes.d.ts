@@ -538,6 +538,98 @@ export interface ApiPastEventPastEvent extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiProgramProgram extends Struct.CollectionTypeSchema {
+  collectionName: 'programs';
+  info: {
+    displayName: 'Program';
+    pluralName: 'programs';
+    singularName: 'program';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    img1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::program.program'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    txt1: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPublishingResearchPublishingResearch
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'publishing_researches';
+  info: {
+    displayName: 'PublishingResearch';
+    pluralName: 'publishing-researches';
+    singularName: 'publishing-research';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img10: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img3: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img4: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img5: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img6: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img7: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img8: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img9: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link1: Schema.Attribute.String;
+    link10: Schema.Attribute.String;
+    link11: Schema.Attribute.String;
+    link2: Schema.Attribute.String;
+    link3: Schema.Attribute.String;
+    link4: Schema.Attribute.String;
+    link5: Schema.Attribute.String;
+    link6: Schema.Attribute.String;
+    link7: Schema.Attribute.String;
+    link8: Schema.Attribute.String;
+    link9: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::publishing-research.publishing-research'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    txt1: Schema.Attribute.String;
+    txt10: Schema.Attribute.String;
+    txt11: Schema.Attribute.String;
+    txt2: Schema.Attribute.String;
+    txt3: Schema.Attribute.String;
+    txt4: Schema.Attribute.String;
+    txt5: Schema.Attribute.String;
+    txt6: Schema.Attribute.String;
+    txt7: Schema.Attribute.String;
+    txt8: Schema.Attribute.String;
+    txt9: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1050,6 +1142,8 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::company-background.company-background': ApiCompanyBackgroundCompanyBackground;
       'api::past-event.past-event': ApiPastEventPastEvent;
+      'api::program.program': ApiProgramProgram;
+      'api::publishing-research.publishing-research': ApiPublishingResearchPublishingResearch;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
