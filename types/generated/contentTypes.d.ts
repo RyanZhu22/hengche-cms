@@ -430,6 +430,45 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiBrandCaseBrandCase extends Struct.CollectionTypeSchema {
+  collectionName: 'brand_cases';
+  info: {
+    displayName: 'BrandCase';
+    pluralName: 'brand-cases';
+    singularName: 'brand-case';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img3: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img4: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img5: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img6: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::brand-case.brand-case'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    txt1: Schema.Attribute.String;
+    txt2: Schema.Attribute.String;
+    txt3: Schema.Attribute.String;
+    txt4: Schema.Attribute.String;
+    txt5: Schema.Attribute.String;
+    txt6: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCompanyBackgroundCompanyBackground
   extends Struct.CollectionTypeSchema {
   collectionName: 'company_backgrounds';
@@ -1140,6 +1179,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::brand-case.brand-case': ApiBrandCaseBrandCase;
       'api::company-background.company-background': ApiCompanyBackgroundCompanyBackground;
       'api::past-event.past-event': ApiPastEventPastEvent;
       'api::program.program': ApiProgramProgram;
